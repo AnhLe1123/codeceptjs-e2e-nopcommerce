@@ -1,0 +1,1010 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642580548519' stop='1642580572560'>
+    <name>Register:</name>
+    <title>Register:</title>
+    <test-cases>
+        <test-case start='1642580549643' status='passed' stop='1642580554194'>
+            <name>Pre-condition: Access to Register page</name>
+            <title>Pre-condition: Access to Register page</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1642580549652' status='passed' stop='1642580552007'>
+                    <name>I: openUrl "/"</name>
+                    <title>I: openUrl "/"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580549652' status='passed' stop='1642580552007'>
+                            <name>I am on page "/"</name>
+                            <title>I am on page "/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580552007' status='passed' stop='1642580552319'>
+                    <name>homePage: isHomepageSliderDisplayed </name>
+                    <title>homePage: isHomepageSliderDisplayed </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580552007' status='passed' stop='1642580552318'>
+                            <name>I wait for visible "//div[@id='nivo-slider']", 30</name>
+                            <title>I wait for visible "//div[@id='nivo-slider']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580552319' status='passed' stop='1642580552329'>
+                    <name>I see element "//div[@id='nivo-slider']"</name>
+                    <title>I see element "//div[@id='nivo-slider']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1642580552330' status='passed' stop='1642580552331'>
+                    <name>I assert true true</name>
+                    <title>I assert true true</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1642580552331' status='passed' stop='1642580554144'>
+                    <name>I: clickToLinkByText "Register"</name>
+                    <title>I: clickToLinkByText "Register"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580552331' status='passed' stop='1642580552331'>
+                            <name>I wait for clickable "//a[text()='Register']", 30</name>
+                            <title>I wait for clickable "//a[text()='Register']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580552331' status='passed' stop='1642580554144'>
+                            <name>I click "//a[text()='Register']"</name>
+                            <title>I click "//a[text()='Register']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580554144' status='passed' stop='1642580554194'>
+                    <name>I: getTitleText </name>
+                    <title>I: getTitleText </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580554144' status='passed' stop='1642580554185'>
+                            <name>I wait for visible "//div[@class='page-title']//h1", 30</name>
+                            <title>I wait for visible "//div[@class='page-title']//h1", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580554185' status='passed' stop='1642580554194'>
+                            <name>I grab text from "//div[@class='page-title']//h1"</name>
+                            <title>I grab text from "//div[@class='page-title']//h1"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580554194' status='passed' stop='1642580554194'>
+                    <name>I assert equal "Register", "Register"</name>
+                    <title>I assert equal "Register", "Register"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1642580554204' status='passed' stop='1642580554920'>
+            <name>Re_01: Register with empty data</name>
+            <title>Re_01: Register with empty data</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1642580554206' status='passed' stop='1642580554853'>
+                    <name>I: clickToButtonByText "Register"</name>
+                    <title>I: clickToButtonByText "Register"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580554206' status='passed' stop='1642580554206'>
+                            <name>I wait for clickable "//button[text()='Register']", 30</name>
+                            <title>I wait for clickable "//button[text()='Register']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580554206' status='passed' stop='1642580554853'>
+                            <name>I click "//button[text()='Register']"</name>
+                            <title>I click "//button[text()='Register']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580554853' status='passed' stop='1642580554876'>
+                    <name>registerPage: getErrorMessageByLabel "FirstName"</name>
+                    <title>registerPage: getErrorMessageByLabel "FirstName"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580554853' status='passed' stop='1642580554867'>
+                            <name>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='FirstName']", 30</name>
+                            <title>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='FirstName']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580554867' status='passed' stop='1642580554876'>
+                            <name>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='FirstName']"</name>
+                            <title>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='FirstName']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580554876' status='passed' stop='1642580554877'>
+                    <name>I assert equal "First name is required.", "First name is required."</name>
+                    <title>I assert equal "First name is required.", "First name is required."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1642580554877' status='passed' stop='1642580554889'>
+                    <name>registerPage: getErrorMessageByLabel "LastName"</name>
+                    <title>registerPage: getErrorMessageByLabel "LastName"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580554877' status='passed' stop='1642580554884'>
+                            <name>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='LastName']", 30</name>
+                            <title>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='LastName']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580554884' status='passed' stop='1642580554889'>
+                            <name>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='LastName']"</name>
+                            <title>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='LastName']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580554889' status='passed' stop='1642580554889'>
+                    <name>I assert equal "Last name is required.", "Last name is required."</name>
+                    <title>I assert equal "Last name is required.", "Last name is required."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1642580554889' status='passed' stop='1642580554899'>
+                    <name>registerPage: getErrorMessageByLabel "Email"</name>
+                    <title>registerPage: getErrorMessageByLabel "Email"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580554889' status='passed' stop='1642580554895'>
+                            <name>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='Email']", 30</name>
+                            <title>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='Email']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580554895' status='passed' stop='1642580554899'>
+                            <name>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='Email']"</name>
+                            <title>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='Email']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580554899' status='passed' stop='1642580554899'>
+                    <name>I assert equal "Email is required.", "Email is required."</name>
+                    <title>I assert equal "Email is required.", "Email is required."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1642580554899' status='passed' stop='1642580554910'>
+                    <name>registerPage: getErrorMessageByLabel "Password"</name>
+                    <title>registerPage: getErrorMessageByLabel "Password"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580554899' status='passed' stop='1642580554905'>
+                            <name>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='Password']", 30</name>
+                            <title>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='Password']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580554905' status='passed' stop='1642580554910'>
+                            <name>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='Password']"</name>
+                            <title>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='Password']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580554910' status='passed' stop='1642580554910'>
+                    <name>I assert equal "Password is required.", "Password is required."</name>
+                    <title>I assert equal "Password is required.", "Password is required."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1642580554910' status='passed' stop='1642580554919'>
+                    <name>registerPage: getErrorMessageByLabel "ConfirmPassword"</name>
+                    <title>registerPage: getErrorMessageByLabel "ConfirmPassword"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580554910' status='passed' stop='1642580554915'>
+                            <name>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='ConfirmPassword']", 30</name>
+                            <title>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='ConfirmPassword']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580554916' status='passed' stop='1642580554919'>
+                            <name>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='ConfirmPassword']"</name>
+                            <title>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='ConfirmPassword']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580554919' status='passed' stop='1642580554920'>
+                    <name>I assert equal "Password is required.", "Password is required."</name>
+                    <title>I assert equal "Password is required.", "Password is required."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1642580554927' status='passed' stop='1642580556902'>
+            <name>Re_02: Register with invalid email</name>
+            <title>Re_02: Register with invalid email</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1642580554928' status='passed' stop='1642580556388'>
+                    <name>I: clickToLinkByText "Register"</name>
+                    <title>I: clickToLinkByText "Register"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580554928' status='passed' stop='1642580554928'>
+                            <name>I wait for clickable "//a[text()='Register']", 30</name>
+                            <title>I wait for clickable "//a[text()='Register']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580554928' status='passed' stop='1642580556388'>
+                            <name>I click "//a[text()='Register']"</name>
+                            <title>I click "//a[text()='Register']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580556388' status='passed' stop='1642580556723'>
+                    <name>I: inputToTextboxByID "Email", "abc!@#"</name>
+                    <title>I: inputToTextboxByID "Email", "abc!@#"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580556388' status='passed' stop='1642580556395'>
+                            <name>I wait for visible "//input[@id='Email']", 30</name>
+                            <title>I wait for visible "//input[@id='Email']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580556396' status='passed' stop='1642580556512'>
+                            <name>I clear field "//input[@id='Email']"</name>
+                            <title>I clear field "//input[@id='Email']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580556512' status='passed' stop='1642580556723'>
+                            <name>I fill field "//input[@id='Email']", "abc!@#"</name>
+                            <title>I fill field "//input[@id='Email']", "abc!@#"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580556723' status='passed' stop='1642580556883'>
+                    <name>I: clickToButtonByText "Register"</name>
+                    <title>I: clickToButtonByText "Register"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580556723' status='passed' stop='1642580556724'>
+                            <name>I wait for clickable "//button[text()='Register']", 30</name>
+                            <title>I wait for clickable "//button[text()='Register']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580556725' status='passed' stop='1642580556883'>
+                            <name>I click "//button[text()='Register']"</name>
+                            <title>I click "//button[text()='Register']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580556883' status='passed' stop='1642580556901'>
+                    <name>registerPage: getErrorMessageByLabel "Email"</name>
+                    <title>registerPage: getErrorMessageByLabel "Email"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580556883' status='passed' stop='1642580556894'>
+                            <name>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='Email']", 30</name>
+                            <title>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='Email']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580556894' status='passed' stop='1642580556901'>
+                            <name>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='Email']"</name>
+                            <title>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='Email']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580556901' status='passed' stop='1642580556902'>
+                    <name>I assert equal "Wrong email", "Wrong email"</name>
+                    <title>I assert equal "Wrong email", "Wrong email"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1642580556909' status='passed' stop='1642580566459'>
+            <name>Re_03: Register with valid info</name>
+            <title>Re_03: Register with valid info</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1642580556916' status='passed' stop='1642580558283'>
+                    <name>I: clickToLinkByText "Register"</name>
+                    <title>I: clickToLinkByText "Register"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580556916' status='passed' stop='1642580556916'>
+                            <name>I wait for clickable "//a[text()='Register']", 30</name>
+                            <title>I wait for clickable "//a[text()='Register']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580556916' status='passed' stop='1642580558283'>
+                            <name>I click "//a[text()='Register']"</name>
+                            <title>I click "//a[text()='Register']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580558283' status='passed' stop='1642580559283'>
+                    <name>I wait 1</name>
+                    <title>I wait 1</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1642580559283' status='passed' stop='1642580559432'>
+                    <name>I: checkToRadioButtonByLabel "Male"</name>
+                    <title>I: checkToRadioButtonByLabel "Male"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580559283' status='passed' stop='1642580559284'>
+                            <name>I wait for clickable "//label[text()='Male']/preceding-sibling::input", 30</name>
+                            <title>I wait for clickable "//label[text()='Male']/preceding-sibling::input", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580559284' status='passed' stop='1642580559431'>
+                            <name>I check option "//label[text()='Male']/preceding-sibling::input"</name>
+                            <title>I check option "//label[text()='Male']/preceding-sibling::input"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580559432' status='passed' stop='1642580560195'>
+                    <name>I: inputToTextboxByID "ConfirmPassword", 67312513</name>
+                    <title>I: inputToTextboxByID "ConfirmPassword", 67312513</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580559432' status='passed' stop='1642580559449'>
+                            <name>I wait for visible "//input[@id='FirstName']", 30</name>
+                            <title>I wait for visible "//input[@id='FirstName']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580559449' status='passed' stop='1642580559570'>
+                            <name>I clear field "//input[@id='FirstName']"</name>
+                            <title>I clear field "//input[@id='FirstName']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580559570' status='passed' stop='1642580559819'>
+                            <name>I fill field "//input[@id='FirstName']", "eqrrlqdp"</name>
+                            <title>I fill field "//input[@id='FirstName']", "eqrrlqdp"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580559820' status='passed' stop='1642580559837'>
+                            <name>I wait for visible "//input[@id='LastName']", 30</name>
+                            <title>I wait for visible "//input[@id='LastName']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580559837' status='passed' stop='1642580559964'>
+                            <name>I clear field "//input[@id='LastName']"</name>
+                            <title>I clear field "//input[@id='LastName']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580559964' status='passed' stop='1642580560195'>
+                            <name>I fill field "//input[@id='LastName']", "jhyjhccx"</name>
+                            <title>I fill field "//input[@id='LastName']", "jhyjhccx"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580560195' status='passed' stop='1642580560598'>
+                    <name>I: selectOptionInDropdownByName "DateOfBirthYear", "1999"</name>
+                    <title>I: selectOptionInDropdownByName "DateOfBirthYear", "1999"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580560195' status='passed' stop='1642580560208'>
+                            <name>I wait for visible "//select[@name='DateOfBirthDay']", 30</name>
+                            <title>I wait for visible "//select[@name='DateOfBirthDay']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580560209' status='passed' stop='1642580560326'>
+                            <name>I select option "//select[@name='DateOfBirthDay']", "19"</name>
+                            <title>I select option "//select[@name='DateOfBirthDay']", "19"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580560327' status='passed' stop='1642580560343'>
+                            <name>I wait for visible "//select[@name='DateOfBirthMonth']", 30</name>
+                            <title>I wait for visible "//select[@name='DateOfBirthMonth']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580560343' status='passed' stop='1642580560465'>
+                            <name>I select option "//select[@name='DateOfBirthMonth']", "June"</name>
+                            <title>I select option "//select[@name='DateOfBirthMonth']", "June"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580560465' status='passed' stop='1642580560478'>
+                            <name>I wait for visible "//select[@name='DateOfBirthYear']", 30</name>
+                            <title>I wait for visible "//select[@name='DateOfBirthYear']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580560478' status='passed' stop='1642580560597'>
+                            <name>I select option "//select[@name='DateOfBirthYear']", "1999"</name>
+                            <title>I select option "//select[@name='DateOfBirthYear']", "1999"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580560598' status='passed' stop='1642580562408'>
+                    <name>I: inputToTextboxByID "ConfirmPassword", 67312513</name>
+                    <title>I: inputToTextboxByID "ConfirmPassword", 67312513</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580560598' status='passed' stop='1642580560611'>
+                            <name>I wait for visible "//input[@id='Email']", 30</name>
+                            <title>I wait for visible "//input[@id='Email']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580560611' status='passed' stop='1642580560735'>
+                            <name>I clear field "//input[@id='Email']"</name>
+                            <title>I clear field "//input[@id='Email']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580560735' status='passed' stop='1642580561232'>
+                            <name>I fill field "//input[@id='Email']", "vfzasesdyuus2655@mail.com"</name>
+                            <title>I fill field "//input[@id='Email']", "vfzasesdyuus2655@mail.com"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580561233' status='passed' stop='1642580561247'>
+                            <name>I wait for visible "//input[@id='Company']", 30</name>
+                            <title>I wait for visible "//input[@id='Company']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580561247' status='passed' stop='1642580561372'>
+                            <name>I clear field "//input[@id='Company']"</name>
+                            <title>I clear field "//input[@id='Company']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580561372' status='passed' stop='1642580561639'>
+                            <name>I fill field "//input[@id='Company']", "CodeceptJS"</name>
+                            <title>I fill field "//input[@id='Company']", "CodeceptJS"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580561640' status='passed' stop='1642580561653'>
+                            <name>I wait for visible "//input[@id='Password']", 30</name>
+                            <title>I wait for visible "//input[@id='Password']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580561653' status='passed' stop='1642580561778'>
+                            <name>I clear field "//input[@id='Password']"</name>
+                            <title>I clear field "//input[@id='Password']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580561778' status='passed' stop='1642580562018'>
+                            <name>I fill field "//input[@id='Password']", 67312513</name>
+                            <title>I fill field "//input[@id='Password']", 67312513</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580562018' status='passed' stop='1642580562036'>
+                            <name>I wait for visible "//input[@id='ConfirmPassword']", 30</name>
+                            <title>I wait for visible "//input[@id='ConfirmPassword']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580562036' status='passed' stop='1642580562164'>
+                            <name>I clear field "//input[@id='ConfirmPassword']"</name>
+                            <title>I clear field "//input[@id='ConfirmPassword']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580562164' status='passed' stop='1642580562407'>
+                            <name>I fill field "//input[@id='ConfirmPassword']", 67312513</name>
+                            <title>I fill field "//input[@id='ConfirmPassword']", 67312513</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580562408' status='passed' stop='1642580563961'>
+                    <name>I: clickToButtonByText "Register"</name>
+                    <title>I: clickToButtonByText "Register"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580562408' status='passed' stop='1642580562408'>
+                            <name>I wait for clickable "//button[text()='Register']", 30</name>
+                            <title>I wait for clickable "//button[text()='Register']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580562408' status='passed' stop='1642580563961'>
+                            <name>I click "//button[text()='Register']"</name>
+                            <title>I click "//button[text()='Register']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580563961' status='passed' stop='1642580563980'>
+                    <name>registerPage: getSuccessMessage </name>
+                    <title>registerPage: getSuccessMessage </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580563961' status='passed' stop='1642580563972'>
+                            <name>I wait for visible "//div[@class='result']", 30</name>
+                            <title>I wait for visible "//div[@class='result']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580563972' status='passed' stop='1642580563980'>
+                            <name>I grab text from "//div[@class='result']"</name>
+                            <title>I grab text from "//div[@class='result']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580563980' status='passed' stop='1642580563980'>
+                    <name>I assert equal "Your registration completed", "Your registration completed"</name>
+                    <title>I assert equal "Your registration completed", "Your registration completed"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1642580563981' status='passed' stop='1642580566459'>
+                    <name>I: clickToLinkByText "Log out"</name>
+                    <title>I: clickToLinkByText "Log out"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580563981' status='passed' stop='1642580563981'>
+                            <name>I wait for clickable "//a[text()='Log out']", 30</name>
+                            <title>I wait for clickable "//a[text()='Log out']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580563981' status='passed' stop='1642580566459'>
+                            <name>I click "//a[text()='Log out']"</name>
+                            <title>I click "//a[text()='Log out']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1642580566467' status='passed' stop='1642580570016'>
+            <name>Re_04: Register with existing email</name>
+            <title>Re_04: Register with existing email</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1642580566470' status='passed' stop='1642580567295'>
+                    <name>I: clickToLinkByText "Register"</name>
+                    <title>I: clickToLinkByText "Register"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580566470' status='passed' stop='1642580566470'>
+                            <name>I wait for clickable "//a[text()='Register']", 30</name>
+                            <title>I wait for clickable "//a[text()='Register']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580566470' status='passed' stop='1642580567295'>
+                            <name>I click "//a[text()='Register']"</name>
+                            <title>I click "//a[text()='Register']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580567295' status='passed' stop='1642580569463'>
+                    <name>I: inputToTextboxByID "ConfirmPassword", 67312513</name>
+                    <title>I: inputToTextboxByID "ConfirmPassword", 67312513</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580567295' status='passed' stop='1642580567315'>
+                            <name>I wait for visible "//input[@id='FirstName']", 30</name>
+                            <title>I wait for visible "//input[@id='FirstName']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580567315' status='passed' stop='1642580567436'>
+                            <name>I clear field "//input[@id='FirstName']"</name>
+                            <title>I clear field "//input[@id='FirstName']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580567436' status='passed' stop='1642580567679'>
+                            <name>I fill field "//input[@id='FirstName']", "eqrrlqdp"</name>
+                            <title>I fill field "//input[@id='FirstName']", "eqrrlqdp"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580567679' status='passed' stop='1642580567695'>
+                            <name>I wait for visible "//input[@id='LastName']", 30</name>
+                            <title>I wait for visible "//input[@id='LastName']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580567696' status='passed' stop='1642580567821'>
+                            <name>I clear field "//input[@id='LastName']"</name>
+                            <title>I clear field "//input[@id='LastName']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580567822' status='passed' stop='1642580568061'>
+                            <name>I fill field "//input[@id='LastName']", "jhyjhccx"</name>
+                            <title>I fill field "//input[@id='LastName']", "jhyjhccx"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580568061' status='passed' stop='1642580568077'>
+                            <name>I wait for visible "//input[@id='Email']", 30</name>
+                            <title>I wait for visible "//input[@id='Email']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580568077' status='passed' stop='1642580568202'>
+                            <name>I clear field "//input[@id='Email']"</name>
+                            <title>I clear field "//input[@id='Email']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580568202' status='passed' stop='1642580568713'>
+                            <name>I fill field "//input[@id='Email']", "vfzasesdyuus2655@mail.com"</name>
+                            <title>I fill field "//input[@id='Email']", "vfzasesdyuus2655@mail.com"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580568713' status='passed' stop='1642580568729'>
+                            <name>I wait for visible "//input[@id='Password']", 30</name>
+                            <title>I wait for visible "//input[@id='Password']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580568729' status='passed' stop='1642580568852'>
+                            <name>I clear field "//input[@id='Password']"</name>
+                            <title>I clear field "//input[@id='Password']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580568852' status='passed' stop='1642580569086'>
+                            <name>I fill field "//input[@id='Password']", 67312513</name>
+                            <title>I fill field "//input[@id='Password']", 67312513</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580569086' status='passed' stop='1642580569100'>
+                            <name>I wait for visible "//input[@id='ConfirmPassword']", 30</name>
+                            <title>I wait for visible "//input[@id='ConfirmPassword']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580569100' status='passed' stop='1642580569222'>
+                            <name>I clear field "//input[@id='ConfirmPassword']"</name>
+                            <title>I clear field "//input[@id='ConfirmPassword']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580569222' status='passed' stop='1642580569463'>
+                            <name>I fill field "//input[@id='ConfirmPassword']", 67312513</name>
+                            <title>I fill field "//input[@id='ConfirmPassword']", 67312513</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580569463' status='passed' stop='1642580570004'>
+                    <name>I: clickToButtonByText "Register"</name>
+                    <title>I: clickToButtonByText "Register"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580569463' status='passed' stop='1642580569464'>
+                            <name>I wait for clickable "//button[text()='Register']", 30</name>
+                            <title>I wait for clickable "//button[text()='Register']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580569464' status='passed' stop='1642580570004'>
+                            <name>I click "//button[text()='Register']"</name>
+                            <title>I click "//button[text()='Register']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580570004' status='passed' stop='1642580570016'>
+                    <name>registerPage: getExistingEmailErrorMessage </name>
+                    <title>registerPage: getExistingEmailErrorMessage </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580570004' status='passed' stop='1642580570011'>
+                            <name>I wait for visible "//div[@class='message-error validation-summary-errors']//li", 30</name>
+                            <title>I wait for visible "//div[@class='message-error validation-summary-errors']//li", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580570011' status='passed' stop='1642580570016'>
+                            <name>I grab text from "//div[@class='message-error validation-summary-errors']//li"</name>
+                            <title>I grab text from "//div[@class='message-error validation-summary-errors']//li"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580570016' status='passed' stop='1642580570016'>
+                    <name>I assert equal "The specified email already exists", "The specified email already exists"</name>
+                    <title>I assert equal "The specified email already exists", "The specified email already exists"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1642580570021' status='passed' stop='1642580571061'>
+            <name>Re_05: Register with password less than 6 chars</name>
+            <title>Re_05: Register with password less than 6 chars</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1642580570022' status='passed' stop='1642580570566'>
+                    <name>I: clickToLinkByText "Register"</name>
+                    <title>I: clickToLinkByText "Register"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580570022' status='passed' stop='1642580570022'>
+                            <name>I wait for clickable "//a[text()='Register']", 30</name>
+                            <title>I wait for clickable "//a[text()='Register']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580570022' status='passed' stop='1642580570566'>
+                            <name>I click "//a[text()='Register']"</name>
+                            <title>I click "//a[text()='Register']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580570566' status='passed' stop='1642580570887'>
+                    <name>I: inputToTextboxByID "Password", "1234"</name>
+                    <title>I: inputToTextboxByID "Password", "1234"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580570566' status='passed' stop='1642580570580'>
+                            <name>I wait for visible "//input[@id='Password']", 30</name>
+                            <title>I wait for visible "//input[@id='Password']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580570580' status='passed' stop='1642580570698'>
+                            <name>I clear field "//input[@id='Password']"</name>
+                            <title>I clear field "//input[@id='Password']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580570698' status='passed' stop='1642580570887'>
+                            <name>I fill field "//input[@id='Password']", "1234"</name>
+                            <title>I fill field "//input[@id='Password']", "1234"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580570887' status='passed' stop='1642580571038'>
+                    <name>I: clickToButtonByText "Register"</name>
+                    <title>I: clickToButtonByText "Register"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580570887' status='passed' stop='1642580570887'>
+                            <name>I wait for clickable "//button[text()='Register']", 30</name>
+                            <title>I wait for clickable "//button[text()='Register']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580570888' status='passed' stop='1642580571038'>
+                            <name>I click "//button[text()='Register']"</name>
+                            <title>I click "//button[text()='Register']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580571038' status='passed' stop='1642580571061'>
+                    <name>registerPage: getErrorMessageByLabel "Password"</name>
+                    <title>registerPage: getErrorMessageByLabel "Password"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580571038' status='passed' stop='1642580571053'>
+                            <name>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='Password']", 30</name>
+                            <title>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='Password']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580571053' status='passed' stop='1642580571061'>
+                            <name>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='Password']"</name>
+                            <title>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='Password']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580571061' status='passed' stop='1642580571061'>
+                    <name>I assert equal "Password must meet the following rules: must have at least 6 characters", "Password must meet the following rules: must have at least 6 characters"</name>
+                    <title>I assert equal "Password must meet the following rules: must have at least 6 characters", "Password must meet the following rules: must have at least 6 characters"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1642580571069' status='passed' stop='1642580572553'>
+            <name>Re_06: Register with confirm password unmatched password</name>
+            <title>Re_06: Register with confirm password unmatched password</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1642580571071' status='passed' stop='1642580571702'>
+                    <name>I: clickToLinkByText "Register"</name>
+                    <title>I: clickToLinkByText "Register"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580571071' status='passed' stop='1642580571071'>
+                            <name>I wait for clickable "//a[text()='Register']", 30</name>
+                            <title>I wait for clickable "//a[text()='Register']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580571071' status='passed' stop='1642580571702'>
+                            <name>I click "//a[text()='Register']"</name>
+                            <title>I click "//a[text()='Register']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580571702' status='passed' stop='1642580572395'>
+                    <name>I: inputToTextboxByID "ConfirmPassword", "654321"</name>
+                    <title>I: inputToTextboxByID "ConfirmPassword", "654321"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580571702' status='passed' stop='1642580571711'>
+                            <name>I wait for visible "//input[@id='Password']", 30</name>
+                            <title>I wait for visible "//input[@id='Password']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580571711' status='passed' stop='1642580571825'>
+                            <name>I clear field "//input[@id='Password']"</name>
+                            <title>I clear field "//input[@id='Password']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580571826' status='passed' stop='1642580572044'>
+                            <name>I fill field "//input[@id='Password']", "123456"</name>
+                            <title>I fill field "//input[@id='Password']", "123456"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580572045' status='passed' stop='1642580572058'>
+                            <name>I wait for visible "//input[@id='ConfirmPassword']", 30</name>
+                            <title>I wait for visible "//input[@id='ConfirmPassword']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580572058' status='passed' stop='1642580572182'>
+                            <name>I clear field "//input[@id='ConfirmPassword']"</name>
+                            <title>I clear field "//input[@id='ConfirmPassword']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580572182' status='passed' stop='1642580572394'>
+                            <name>I fill field "//input[@id='ConfirmPassword']", "654321"</name>
+                            <title>I fill field "//input[@id='ConfirmPassword']", "654321"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580572395' status='passed' stop='1642580572536'>
+                    <name>I: clickToButtonByText "Register"</name>
+                    <title>I: clickToButtonByText "Register"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580572395' status='passed' stop='1642580572395'>
+                            <name>I wait for clickable "//button[text()='Register']", 30</name>
+                            <title>I wait for clickable "//button[text()='Register']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580572395' status='passed' stop='1642580572536'>
+                            <name>I click "//button[text()='Register']"</name>
+                            <title>I click "//button[text()='Register']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580572536' status='passed' stop='1642580572553'>
+                    <name>registerPage: getErrorMessageByLabel "ConfirmPassword"</name>
+                    <title>registerPage: getErrorMessageByLabel "ConfirmPassword"</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642580572536' status='passed' stop='1642580572547'>
+                            <name>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='ConfirmPassword']", 30</name>
+                            <title>I wait for visible "//span[@class='field-validation-error' and @data-valmsg-for='ConfirmPassword']", 30</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1642580572547' status='passed' stop='1642580572553'>
+                            <name>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='ConfirmPassword']"</name>
+                            <title>I grab text from "//span[@class='field-validation-error' and @data-valmsg-for='ConfirmPassword']"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1642580572553' status='passed' stop='1642580572553'>
+                    <name>I assert equal "The password and confirmation password do not match.", "The password and confirmation password do not match."</name>
+                    <title>I assert equal "The password and confirmation password do not match.", "The password and confirmation password do not match."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
